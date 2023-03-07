@@ -1,11 +1,8 @@
 import { createContext, useEffect, useState } from "react";
-import { clone, cloneDeep } from "lodash";
-import secureLocalStorage from "react-secure-storage";
-import Router, { useRouter } from "next/router";
+
 const AllContext = createContext();
 
 export function AllContextProvider(props) {
-  const router = useRouter();
   const [subjectModalClicked, setSubjectModalClicked] = useState(false);
   const [assessmentAvailable, setAssessmentAvailable] = useState(false);
 
