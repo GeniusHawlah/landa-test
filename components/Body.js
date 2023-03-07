@@ -104,7 +104,7 @@ function Body() {
           </div>
           <div className="mt-5  ">
             {SUBJECTS.map((subject, i) => (
-              <div
+              <div key={subject.name}
                 className={`flex space-x-5 border-b-2 py-2    ${
                   i % 2 !== 0 ? "bg-[#F8F9FC]" : ""
                 }`}

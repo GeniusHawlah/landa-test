@@ -13,7 +13,7 @@ function LeftBar() {
       <div className="mt-12 flex flex-col justify-between h-full ">
         <div className=" space-y-3">
           {DASHBOARD_LINKS.map((item) => (
-            <div
+            <div key={item.name}
               className={`${
                 item.name === "Assessment" ? "text-pry-color" : ""
               } flex  py-1 px-2 hover:text-pry-color hover:bg-[#DDE7F8] cursor-pointer`}
